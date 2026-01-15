@@ -113,7 +113,7 @@ shareBtn.addEventListener('click', () => {
     if (shareBtn.disabled) return; // Prevent action if disabled
     
     // Your website URL - REPLACE THIS with your actual website URL
-    const websiteUrl = 'https://yourwebsite.com';
+    const websiteUrl = 'https://bow-to-king-trump.vercel.app/';
     
     // Create the tweet text
     const tweetText = `My favorite leader just received the blessing 👑✨ $BowToking\n\n${websiteUrl}`;
