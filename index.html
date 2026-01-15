@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bow To King Trump</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="section-hero" id="main">
+        
+        <nav class="top-nav">
+            <button class="nav-item">Main</button>
+            <button class="nav-item">Generate</button>
+            <button class="nav-item">Future</button>
+        </nav>
+
+        <div class="ca-container">
+            <div class="ca-box">
+                <span id="ca-text">BtxUo1cxBVRY9kskusuMAF1ZoYAo2c5SJPHk4KKkpump</span>
+                <button id="copy-btn" onclick="copyCA()">COPY</button>
+            </div>
+            <a href="https://pump.fun/" target="_blank" class="custom-pump-btn">
+                VIEW ON PUMP.FUN
+            </a>
+        </div>
+
+    </section>
+
+    <section class="section-generate" id="generate">
+    
+    <!-- Main Content Area -->
+    <div class="generate-content">
+        <div class="blessing-text">
+            <span class="text-part">You want</span>
+            
+            <!-- Leader Selection Dropdown (inline with text) -->
+            <div class="leader-dropdown inline-dropdown">
+                <div class="dropdown-header" id="leaderDropdownHeader">
+                    SELECT LEADER
+                </div>
+                <div class="dropdown-list" id="leaderDropdownList">
+                    <div class="dropdown-item" data-value="01" data-image="1.-Ali-Khameneii.jpg">01 Ali Khameneii</div>
+                    <div class="dropdown-item" data-value="02" data-image="2.-Bashar al-Assad.jpg">02 Bashar Al-Assad</div>
+                    <div class="dropdown-item" data-value="03" data-image="3.-Barack-Obama.jpg">03 Barack Obama</div>
+                    <div class="dropdown-item" data-value="04" data-image="4.-Benjamin-Netanyahu.jpg">04 Netanyahu</div>
+                    <div class="dropdown-item" data-value="05" data-image="5.-Boris-Johnson.jpg">05 Boris Johnson</div>
+                    <div class="dropdown-item" data-value="06" data-image="6.-Emmanuel-Macron.jpg">06 Emmanuel Macron</div>
+                    <div class="dropdown-item" data-value="07" data-image="7.-Giorgia-Meloni.jpg">07 Giorgia Meloni</div>
+                    <div class="dropdown-item" data-value="08" data-image="8.-Imran-Khan.jpg">08 Imran Khan</div>
+                    <div class="dropdown-item" data-value="09" data-image="9.-Javier-Milei.jpg">09 Javier Milei</div>
+                    <div class="dropdown-item" data-value="10" data-image="10.-Joe-Biden.jpg">10 Joe Biden</div>
+                    <div class="dropdown-item" data-value="11" data-image="11.-Justin-Trudeau.jpg">11 Justin Trudeau</div>
+                    <div class="dropdown-item" data-value="12" data-image="12.-Kim-Jong-Un.jpg">12 Kim Jong Un</div>
+                    <div class="dropdown-item" data-value="13" data-image="13.-King-Charles-III.jpg">13 King Charles-III</div>
+                    <div class="dropdown-item" data-value="14" data-image="14.-Lula-da-Silva.jpg">14 Lula da Silva</div>
+                    <div class="dropdown-item" data-value="15" data-image="15.-Mohammed-bin-Salman-(MBS).jpg">15 MBS</div>
+                    <div class="dropdown-item" data-value="16" data-image="16.-Narendra-Modi.jpg">16 Narendra Modi</div>
+                    <div class="dropdown-item" data-value="17" data-image="17.-Nayib-Bukele.jpg">17 Nayib Bukele</div>
+                    <div class="dropdown-item" data-value="18" data-image="18.-Nicolás-Maduro.jpg">18 Nicolás Maduro</div>
+                    <div class="dropdown-item" data-value="19" data-image="19.-Queen-Elizabeth-II-.jpg">19 Queen Elizabeth-II</div>
+                    <div class="dropdown-item" data-value="20" data-image="20.-Recep-Tayyip-Erdogan.jpg">20 Recep Erdogan</div>
+                    <div class="dropdown-item" data-value="21" data-image="21.-Shinzo-Abe-.jpg">21 Shinzo Abe</div>
+                    <div class="dropdown-item" data-value="22" data-image="22.-Silvio-Berlusconi-.jpg">22 Silvio Berlusconi</div>
+                    <div class="dropdown-item" data-value="23" data-image="23.-Viktor-Orbán.jpg">23 Viktor Orbán</div>
+                    <div class="dropdown-item" data-value="24" data-image="24.-Vladimir-Putin.jpg">24 Vladimir Putin</div>
+                    <div class="dropdown-item" data-value="25" data-image="25.-Volodymyr-Zelenskyy.jpg">25 Zelenskyy</div>
+                    <div class="dropdown-item" data-value="26" data-image="26.-Xi-Jinping.jpg">26 Xi Jinping</div>
+                    <div class="dropdown-item" data-value="27" data-image="27.-ursula-von-der-leyen.jpg">27 Ursula </div>
+                </div>
+            </div>
+            
+            <span class="text-part">Bow to King Trump and Get Blessing</span>
+        </div>
+        
+        <!-- Generate Button -->
+        <button class="generate-btn" id="generateBtn">
+            GENERATE
+        </button>
+
+        <!-- Image Display Area -->
+<div class="image-container" id="imageContainer">
+    <div class="image-frame">
+        <img id="leaderImage" src="" alt="Leader Image" style="display: none;">
+        <div class="image-placeholder" id="imagePlaceholder">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                <rect x="40" y="40" width="120" height="120" fill="none" stroke="#ffd700" stroke-width="3" opacity="0.3"/>
+                <circle cx="80" cy="80" r="15" fill="#ffd700" opacity="0.3"/>
+                <path d="M 60 140 L 100 100 L 140 140 Z" fill="#ffd700" opacity="0.3"/>
+            </svg>
+            <p class="placeholder-text">Your blessing will appear here</p>
+        </div>
+    </div>
+    
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+        <button class="download-btn disabled" id="downloadBtn" disabled>
+            DOWNLOAD
+        </button>
+        <button class="share-btn disabled" id="shareBtn" disabled>
+            SHARE ON X
+        </button>
+    </div>
+</div>
+
+</section>
+
+<section class="section-end" id="end">
+    
+    <!-- Future Plans Boxes -->
+    <div class="future-plans">
+        <div class="plan-box">
+            <p class="plan-text">
+                <span class="plan-number">1.</span> ADD ANIMATED<br>
+                MEME VERSIONS<br>
+                <span class="plan-number">2.</span> INTRODUCE<br>
+                MORE CHARACTERS<br>
+                WHO BOW TO<br>
+                KING TRUMP
+            </p>
+        </div>
+        
+        <div class="plan-box">
+            <p class="plan-text">
+                <span class="plan-number">3.</span> CREATE AN<br>
+                AUTOMATED<br>
+                SYSTEM WHERE<br>
+                USERS RECEIVE<br>
+                A UNIQUE NFT<br>
+                "BLESSING BADGE"
+            </p>
+        </div>
+        
+        <div class="plan-box">
+            <p class="plan-text">
+                <span class="plan-number">4.</span> EACH BADGE WILL<br>
+                HAVE A UNIQUE ID<br>
+                AND PREMIUM<br>
+                ARTWORK<br>
+                <span class="plan-number">5.</span> IMPROVE QUALITY<br>
+                AND AUTOMATION<br>
+                PROCESS
+            </p>
+        </div>
+    </div>
+    
+    <!-- Disclaimer Box -->
+    <div class="disclaimer-section">
+        <div class="disclaimer-box">
+            <h2 class="disclaimer-title">DISCLAIMER</h2>
+            <p class="disclaimer-text">
+                THIS PROJECT IS CREATED PURELY FOR ENTERTAINMENT AND MEME CULTURE.<br>
+                WE DO NOT INTEND TO DISRESPECT ANY WORLD LEADER, COUNTRY, OR INDIVIDUAL.<br>
+                THIS IS SATIRE, PARODY, AND INTERNET HUMOR ONLY — EVERYONE DESERVES<br>
+                A CHANCE TO RECEIVE THE BLESSING.
+            </p>
+        </div>
+    </div>
+    
+</section>
+
+    <!-- ADD THIS LINE - Link to your JavaScript file -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
